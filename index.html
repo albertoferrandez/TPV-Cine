@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CINES MAESTRAT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="cine-layout.css" rel="stylesheet" type="text/css"/>
+        <link href="buttons.css" rel="stylesheet" type="text/css"/>
+        <script src="clases.js"></script>
+        <script src="funciones.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="logo">
+                <h1 class="logo-cine">CINES MAESTRAT</h1>
+            </div>
+            <div id="ticketfield">
+                <div class="ticket-card">
+                    <table>
+                        <thead>
+                            <tr id="mitabla1" style="display:none">
+                                <th>Concepto</th><th>Sesion</th><th>Cantidad</th><th>Importe</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mitabla_cuerpo">
+
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <thead>
+                            <tr id="mitabla2" style="display:none">
+                                <th>Concepto</th><th>Cantidad</th><th>Importe</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mitabla_comidas">
+
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <thead>
+                            <tr id="mitabla3" style="display:none">
+                                <th>Concepto</th><th>Cantidad</th><th>Importe</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mitabla_bebidas">
+
+                        </tbody>
+                    </table>
+                    <p id="ticket">   
+                    </p>
+                    <p id="total"></p>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <div class="container-buttons">
+                    <button onclick="borrarPedido()">CANCELAR</button>
+                    <button onclick="borrarPedido()">TRAMITAR</button>
+                </div>
+            </div>
+            <nav>
+                <div>
+                    <button id="tab-peli">
+                        <span>PELICULAS
+                            <img src="img/camera.png" alt="alt"/>      
+                        </span>
+                    </button>
+                    <button id="tab-comida">
+                        <span>COMIDA
+                            <img src="img/popcorn.png" alt="alt"/>      
+                        </span>
+                    </button>
+                    <button id="tab-bebida">
+                        <span>BEBIDA
+                            <img src="img/ticket.png" alt="alt"/>      
+                        </span>
+                    </button>
+                </div>               
+            </nav>
+            <main>
+                <div id="peli-content">
+                    <div id="display-pelis" class="columns">
+                    </div>
+                </div>
+
+                <div id="comida-content">
+                    <div class="display-comida">
+                        <button onclick="AddComida('Palomitas Saladas pequeñas', 1, 2)">Palomitas Saladas pequeñas <img src="img/palomitas.png" alt=""/></button>     
+                        <button onclick="AddComida('Palomitas Saladas medianas', 1, 3)">Palomitas Saladas medianas <img src="img/palomitas.png" alt=""/></button>
+                        <button onclick="AddComida('Palomitas Saladas grandes', 1, 5)">Palomitas Saladas grandes <img src="img/palomitas.png" alt=""/> </button>
+                        <button onclick="AddComida('Palomitas Dulces pequeñas', 1, 2)">Palomitas Dulces pequeñas <img src="img/palomitas.png" alt=""/> </button>
+                        <button onclick="AddComida('Palomitas Dulces medianas', 1, 3)">Palomitas Dulces medianas <img src="img/palomitas.png" alt=""/></button>
+                        <button onclick="AddComida('Palomitas Dulces grandes', 1, 5)">Palomitas Dulces grandes <img src="img/palomitas.png" alt=""/> </button>
+                        <button onclick="AddComida('Chuches pequeñas', 1, 2)">Chuches pequeñas<img src="img/dulces.png" alt=""/></button>
+                        <button onclick="AddComida('Chuches medianas', 1, 3)">Chuches medianas <img src="img/dulces.png" alt=""/> </button>
+                        <button onclick="AddComida('Chuches grandes', 1, 5)">Chuches grandes <img src="img/dulces.png" alt=""/> </button>
+                    </div>
+                </div>
+
+                <div id="bebida-content">
+                    <div class="display-bebida">
+                        <button type="button" onclick="AddBebida('COCA COLA pequeña', 1, 2)">COCA COLA<img src="img/lata.png" alt=""/></button>
+                        <button type="button" onclick="AddBebida('COCA COLA ZERO pequeña', 1, 2)">COCA COLA ZERO <img src="img/lata.png" alt=""/></button>
+                        <button type="button" onclick="AddBebida('FANTA LIMON pequeña', 1, 2)">FANTA LIMON<img src="img/lata-de-bebida.png" alt=""/></button>
+                        <button type="button" onclick="AddBebida('FANTA NARANJA pequeña', 1, 2)">FANTA NARANJA<img src="img/lata-de-refresco.png" alt=""/></button>
+                        <button type="button" onclick="AddBebida('AGUA', 1, 2)">AGUA<img src="img/agua.png" alt=""/></button>
+                        <button type="button" onclick="AddBebida('REDBULL', 1, 3)">REDBULL<img src="img/lata.png" alt=""/></button>
+                    </div>
+                </div>
+            </main> 
+        </div>
+
+        <script>var com = new comanda();</script> 
+        <script src="tabs-main.js" type="text/javascript"></script>
+    </body>
+</html>

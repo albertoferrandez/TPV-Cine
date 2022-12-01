@@ -1,0 +1,76 @@
+
+button{
+    font-family: 'Rye', cursive;
+    background-color: #FFD60A;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px #999;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+    padding: 0.5rem 0;
+}
+
+button img{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1rem;
+}
+
+button span{
+    padding: 0 1rem;
+}
+
+button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em #999;
+}
+
+button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em #999;
+}
+
+.container-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.container-buttons button{
+    margin: 0.5rem 0.3rem;
+    background-color: #1a759f;
+    color: #FFD60A;
+    padding: 0.5rem 0.5rem;
+}
+
+table{
+    height: 50%;
+}
+
+table button{
+   padding: 0.5rem 0.5rem;
+}
+
+.display-comida, .display-bebida{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+.display-comida button{
+    margin: 0.5rem 0.3rem;
+    background-color: #1a759f;
+    color: #FFD60A;
+    padding: 0.5rem 0.5rem;
+}
+
+
+.display-bebida button{
+    margin: 0.5rem 0.3rem;
+    background-color: #1a759f;
+    color: #FFD60A;
+    padding: 0.5rem 0.5rem;
+}
+
+
