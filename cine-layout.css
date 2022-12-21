@@ -66,6 +66,8 @@ main #bebida-content, #comida-content{
         grid-template-rows: 0.3fr 0.3fr 1fr;
         grid-template-areas:
             "logo"
+            "ticketfield"
+            "buttons"
             "sidebar"
             "nav"
             "main";
@@ -79,6 +81,8 @@ main #bebida-content, #comida-content{
         grid-template-rows: 0.1fr 0.1fr 1fr;
         grid-template-areas:
             "logo"
+            "ticketfield"
+            "buttons"
             "sidebar"
             "nav"
             "main";
